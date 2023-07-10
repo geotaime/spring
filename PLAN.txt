@@ -1,0 +1,14 @@
+fork du repo de Nicolas
+creation des 3 branches dev, prepod, prod
+Sur chaque branche, creation d'un dossier terra = infra as code = qui va generer les clusters
+1 cluster par env 
+Sur chaque branche, en plus du workflow terra, creation d'un workflow de l'appli
+Le workflow doit build, test, creer l'image docker, la push sur la registry gcp puis la deployer sur le cluster. 
+
+autre approche 
+lier le github a un repo source google 
+a chaque changement dans le repo google, cloud buid va construire l'image et la stocker dans la registry 
+ensuite il va chercher le manifest et l'appliquer pour deployer les clusters 
+
+TimeLine
+Lundi : prise de decision sur les approches
