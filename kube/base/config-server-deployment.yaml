@@ -30,7 +30,7 @@ spec:
       containers:
         - env:
             - name: spring.datasource.url
-              value: jdbc:mysql://database:3306
+              value: jdbc:mysql://root@34.140.92.34/petclinic
           image: springcommunity/spring-petclinic-config-server
           name: config-server
           ports:
