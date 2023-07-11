@@ -23,10 +23,8 @@ spec:
       labels:
         io.kompose.service: grafana-server
     spec:
-      imagePullSecrets:
-        - name: gcr-json-key
       containers:
-        - image: docker.io/grafana/grafana:latest
+        - image: europe-west1-docker.pkg.dev/mazza-geoffrey/front-regis/grafana:latest
           name: grafana-server
           ports:
             - containerPort: 3000
