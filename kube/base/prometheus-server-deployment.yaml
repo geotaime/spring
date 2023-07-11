@@ -23,6 +23,8 @@ spec:
       labels:
         io.kompose.service: prometheus-server
     spec:
+      imagePullSecrets:
+        - name: gcr-json-key
       containers:
         - image: prometheus-server
           name: prometheus-server

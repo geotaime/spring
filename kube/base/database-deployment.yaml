@@ -23,6 +23,8 @@ spec:
       labels:
         io.kompose.service: database
     spec:
+      imagePullSecrets:
+        - name: gcr-json-key
       containers:
         - env:
             - name: MYSQL_DATABASE

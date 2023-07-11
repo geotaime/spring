@@ -25,6 +25,8 @@ spec:
       labels:
         io.kompose.service: admin-server
     spec:
+      imagePullSecrets:
+        - name: gcr-json-key
       containers:
         - command:
             - ./dockerize

@@ -23,6 +23,8 @@ spec:
       labels:
         io.kompose.service: tracing-server
     spec:
+      imagePullSecrets:
+        - name: gcr-json-key
       containers:
         - env:
             - name: JAVA_OPTS
