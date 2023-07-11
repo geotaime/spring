@@ -26,7 +26,7 @@ spec:
       imagePullSecrets:
         - name: gcr-json-key
       containers:
-        - image: grafana-server
+        - image: docker.io/grafana/grafana:latest
           name: grafana-server
           ports:
             - containerPort: 3000

@@ -36,6 +36,8 @@ spec:
           env:
             - name: 'SPRING_PROFILES_ACTIVE'
               value: 'docker,mysql'
+            - name: management.endpoint.health.show-details
+              value: 'always'  
           image: springcommunity/spring-petclinic-vets-service
           name: vets-service
           ports:
